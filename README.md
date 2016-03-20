@@ -118,8 +118,9 @@ git push
 git clone <link you copied above>
 cd fundamentals
 npm install
-mocha test/square.js # this should pass
-mocha test/add.js # this fails, fix
+npm test test/square.js # this should pass
+npm test test/add.js # this fails, fix
+npm test # to run all tests
 ```
 
   - Fix the remaining tests
