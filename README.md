@@ -57,7 +57,9 @@ $ vi ~/.gitconfig
 $ exit
 ```
 
-#### Git Commands
+#### Git & JazzHub
+  - [Git](http://git-scm.com/)
+  - [JazzHub](https://hub.jazz.net/)
 
 ```sh
 # To clone an existing repository
@@ -91,5 +93,3 @@ git push
   - Module system
   - Pair Programming
   - Test Driven Development: [Mocha](https://mochajs.org/) | [Chai](http://chaijs.com/)
-  - [Git](http://git-scm.com/)
-  - [JazzHub](https://hub.jazz.net/)
