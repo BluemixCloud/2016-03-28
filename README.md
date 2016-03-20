@@ -95,6 +95,7 @@ git push
   - JavaScript, https://developer.mozilla.org/en-US/docs/Web/JavaScript
   - Node.js, https://nodejs.org/en/
   - Module system
+  - Node Package Manager, https://www.npmjs.com/
   - Pair Programming
   - Test Driven Development: [Mocha](https://mochajs.org/) | [Chai](http://chaijs.com/)
 
