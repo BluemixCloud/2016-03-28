@@ -99,15 +99,19 @@ git push
   - Test Driven Development: [Mocha](https://mochajs.org/) | [Chai](http://chaijs.com/)
 
 #### Project 1
-  - Go here, https://hub.jazz.net/project/chyld/fundamentals
-  - Click the "Fork Project" button
+  - This project will be done as a pair
+  - Pick a project manager
+  - The PM will go here, https://hub.jazz.net/project/chyld/fundamentals
+  - PM, click the "Fork Project" button
     - Name the project: fundamentals
     - Check all the boxes
     - Click Create
-  - On your project page, click the "Git URL" link
-  - Copy that link
-  - Open C9 terminal
-  - Make sure you're in the `~/workspace` directory
+  - PM, click the "Members" link on the left, add your partner to the repository
+  - Both people can now push and pull the repository
+  - Both, on the project page, click the "Git URL" link
+  - Both, copy that link
+  - Both, open C9 terminal
+  - Both, make sure you're in the `~/workspace` directory
 
 ```sh
 git clone <link you copied above>
@@ -118,4 +122,5 @@ mocha test/add.js # this fails, fix
 ```
 
   - Fix the remaining tests
-  - Push your completed code up your repository
+  - Take turns, with both people fixing the failing tests
+  - Push your completed code up the repository
