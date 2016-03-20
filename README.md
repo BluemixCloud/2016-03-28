@@ -99,11 +99,18 @@ git push
   - Test Driven Development: [Mocha](https://mochajs.org/) | [Chai](http://chaijs.com/)
 
 #### Project 1
+  - Go here, https://hub.jazz.net/project/chyld/fundamentals
+  - Click the "Fork Project" button
+    - Name the project: fundamentals
+    - Check all the boxes
+    - Click Create
+  - On your project page, click the "Git URL" link
+  - Copy that link
   - Open C9 terminal
   - Make sure you're in the `~/workspace` directory
 
 ```sh
-git clone https://github.com/BluemixCloud/fundamentals
+git clone <link you copied above>
 cd fundamentals
 npm install
 mocha test/square.js # this should pass
