@@ -48,13 +48,13 @@
   - Open Terminal
 
 ```sh
-$ rm README.md
-$ wget https://raw.githubusercontent.com/chyld/devops/master/c9-setup.sh
-$ chmod +x c9-setup.sh
-$ ./c9-setup.sh
-$ rm c9-setup.sh
-$ vi ~/.gitconfig
-$ exit
+rm README.md
+wget https://raw.githubusercontent.com/chyld/devops/master/c9-setup.sh
+chmod +x c9-setup.sh
+./c9-setup.sh
+rm c9-setup.sh
+vi ~/.gitconfig
+exit
 ```
 
 #### Git & JazzHub
@@ -97,3 +97,18 @@ git push
   - Module system
   - Pair Programming
   - Test Driven Development: [Mocha](https://mochajs.org/) | [Chai](http://chaijs.com/)
+
+#### Project 1
+  - Open C9 terminal
+  - Make sure you're in the `~/workspace` directory
+
+```sh
+git clone https://github.com/BluemixCloud/fundamentals
+cd fundamentals
+npm install
+mocha test/square.js # this should pass
+mocha test/add.js # this fails, fix
+```
+
+  - Fix the remaining tests
+  - Push your completed code up your repository
