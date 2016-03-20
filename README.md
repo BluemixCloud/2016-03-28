@@ -57,6 +57,34 @@ $ vi ~/.gitconfig
 $ exit
 ```
 
+#### Git Commands
+
+```sh
+# To clone an existing repository
+git clone https://github.com/BluemixCloud/2016-03-28
+
+# To initialize an empty git repository
+git init
+
+# To check the status of your repository
+git status
+
+# To see all the local and remote branches
+git branch -av
+
+# To check your remote repository
+git remote -v
+
+# To see all of your commits
+git log
+
+# To push your code up to the remote repository
+git add .
+git commit -am "enter a commit message here"
+git pull
+git push
+```
+
 #### Modern Programming Fundamentals
   - JavaScript, https://developer.mozilla.org/en-US/docs/Web/JavaScript
   - Node.js, https://nodejs.org/en/
