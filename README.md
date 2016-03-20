@@ -61,6 +61,10 @@ $ exit
   - [Git](http://git-scm.com/)
   - [JazzHub](https://hub.jazz.net/)
 
+#### JazzHub
+![JazzHub](images/jazzhub.png)
+
+#### Git Commands
 ```sh
 # To clone an existing repository
 git clone https://github.com/BluemixCloud/2016-03-28
