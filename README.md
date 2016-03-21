@@ -156,7 +156,7 @@ npm test # to run all tests
 
 ```sh
 git clone <link you copied above>
-cd fundamentals
+cd backend
 npm install
 npm test # to run all tests
 # comment out every failing test except one
