@@ -139,3 +139,29 @@ npm test # to run all tests
   - Use `rake routes` and browser to demo REST API
   - Parse a deeply nested JSON structure; [Weather Data](weather.json)
 
+#### Project 2
+  - This project will be done as a pair
+  - Pick a project manager
+  - The PM will go here, https://hub.jazz.net/project/chyld/backend
+  - PM, click the "Fork Project" button
+    - Name the project: fundamentals
+    - Check all the boxes
+    - Click Create
+  - PM, click the "Members" link on the left, add your partner to the repository
+  - Both people can now push and pull the repository
+  - Both, on the project page, click the "Git URL" link
+  - Both, copy that link
+  - Both, open C9 terminal
+  - Both, make sure you're in the `~/workspace` directory
+
+```sh
+git clone <link you copied above>
+cd fundamentals
+npm install
+npm test # to run all tests
+# comment out every failing test except one
+```
+
+  - Fix the remaining tests
+  - Take turns, with both people fixing the failing tests
+  - Push your completed code up the repository
