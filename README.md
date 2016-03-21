@@ -199,5 +199,6 @@ npm test # to run all tests
 #### NodeRED
   - http://nodered.org/
   - https://console.ng.bluemix.net/catalog/starters/node-red-starter/
+  - Additional Nodes & Flows, http://flows.nodered.org/
   - Create basic NodeRED flows, exercise functionality
 
