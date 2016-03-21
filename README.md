@@ -186,3 +186,18 @@ npm test # to run all tests
   - `cf apps`
   - `cf services`
   - `cf --help`
+
+#### OpenWhisk
+  - Distributed, Event Driven Compute
+  - [Notes & Lab](openwhisk.md)
+  - To call from other code
+    - `Content-Type: application/json`
+    - `Authorization: Basic <based64 encoded key>`
+    - [Base64 Utility](https://www.base64encode.org/)
+    - `POST https://openwhisk.ng.bluemix.net/api/v1/namespaces/{org_space}/actions/{action-name}?blocking=true`
+
+#### NodeRED
+  - http://nodered.org/
+  - https://console.ng.bluemix.net/catalog/starters/node-red-starter/
+  - Create basic NodeRED flows, exercise functionality
+
