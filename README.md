@@ -166,7 +166,7 @@ npm test # to run all tests
   - Take turns, with both people fixing the failing tests
   - Push your completed code up the repository
 
-#### IBM Bluemix DevOps Services
+#### DevOps Services
   - https://hub.jazz.net/
   - JazzHub
   - Code Editor
