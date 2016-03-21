@@ -158,8 +158,9 @@ npm test # to run all tests
 git clone <link you copied above>
 cd backend
 npm install
+npm test test/hello.js # this should pass
+npm test test/multiply.js # this will fail, please fix
 npm test # to run all tests
-# comment out every failing test except one
 ```
 
   - Fix the remaining tests
