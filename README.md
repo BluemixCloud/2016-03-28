@@ -165,3 +165,23 @@ npm test # to run all tests
   - Fix the remaining tests
   - Take turns, with both people fixing the failing tests
   - Push your completed code up the repository
+
+#### IBM Bluemix DevOps Services
+  - https://hub.jazz.net/
+  - JazzHub
+  - Code Editor
+  - Track & Plan
+  - Build Pipeline
+    - Build a Stage
+    - Add Jobs to a Stage
+    - Jobs can be re-ordered
+
+#### Cloud Foundry
+  - https://www.cloudfoundry.org/
+  - `cf api https://api.ng.bluemix.net`
+  - `cf login`
+  - `cf target`
+  - `cf marketplace`
+  - `cf apps`
+  - `cf services`
+  - `cf --help`
