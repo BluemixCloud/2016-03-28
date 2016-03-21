@@ -126,3 +126,16 @@ npm test # to run all tests
   - Fix the remaining tests
   - Take turns, with both people fixing the failing tests
   - Push your completed code up the repository
+
+#### Backend
+  - HTTP, https://www.w3.org/Protocols/rfc2616/rfc2616.txt
+  - [Express.js](http://expressjs.com/)
+  - Performance: CPU Bound, Memory Bound, I/O Bound
+  - Async programming with callbacks & promises
+  - Node.js perf test with Apache Bench
+  - Run sequentially `-c 1`, then run in parallel `-c 1000`
+  - `ab -n __ -c __ http://0.0.0.0:8080/`
+  - Compare perf to Rails app
+  - Use `rake routes` and browser to demo REST API
+  - Parse a deeply nested JSON structure; [Weather Data](weather.json)
+
