@@ -220,3 +220,70 @@ npm test # to run all tests
   - Button 1: Angular -> NodeRed -> OpenWhisk (squares an input number along each step)
   - Button 2: Angular -> Express (factorial of input number)
   - Button 3: Angular -> OpenWhisk (computes volume from three numbers)
+
+#### Project 4
+  - Twitter Sentiment Analysis
+  - Use NodeRED to create a flow that collects data from Twitter, performs Sentiment Analyis and inserts all that data into a DB2 SQL Database.
+  - Create another flow to query the database and send back the result as JSON.
+  - Create a button in Angular that will fetch all the data and display the data in a table and graph.
+
+Code that aggregates the tweet + sentiment analysis data; ready for insertion into DB2.
+
+```js
+var place;
+
+if(msg.location){
+    place = msg.location.place;
+}
+
+msg.payload = {
+    SCORE: msg.sentiment.score,
+    TWEET: msg.tweet.text,
+    USERNAME: msg.tweet.user.screen_name,
+    LOCATION: place || 'unknown',
+    CREATED_AT: 'TIMESTAMP'
+};
+
+return msg;
+```
+
+Script that creates the table inside DB2. Where the tweet data will be stored.
+
+```sql
+create table tweets
+(
+  id integer not null generated always as identity (start with 1 increment by 1),
+  primary key (id),
+  score integer,
+  tweet varchar(256),
+  username varchar(256),
+  location varchar(256),
+  created_at timestamp
+);
+```
+
+SQL to collect all the tweet data from DB2.
+
+```sql
+select * from tweets;
+```
+
+Angular code to draw a chart using Highcharts.
+
+```js
+function drawChart(tweets){
+  $('#graph').highcharts({
+    title: {
+      text: 'Tweet Sentiment Analysis'
+    },
+    xAxis: {
+       categories: tweets.map(function(t, i){return i})
+    },
+    series: [
+     {
+       data: tweets.map(function(t){return t.SCORE})
+     }
+    ]
+  });
+}
+```
