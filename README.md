@@ -202,7 +202,7 @@ npm test # to run all tests
   - Additional Nodes & Flows, http://flows.nodered.org/
   - Create basic NodeRED flows, exercise functionality
 
-#### Chrome Debugging Plugins
+#### Chrome Plugins
   - [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa)
   - [Angular Inspector](https://chrome.google.com/webstore/detail/ng-inspector-for-angularj/aadgmnobpdmgmigaicncghmmoeflnamj)
 
