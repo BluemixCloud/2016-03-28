@@ -212,3 +212,11 @@ npm test # to run all tests
   - Twitter Bootstrap CSS Framework, http://getbootstrap.com/
   - Highcharts Analytical Charting, http://www.highcharts.com/
   - [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
+
+#### Project 3
+  - Microservice Architecture
+  - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
+  - In Angular, create 3 buttons
+  - Button 1: Angular -> NodeRed -> OpenWhisk (squares an input number along each step)
+  - Button 2: Angular -> Express (factorial of input number)
+  - Button 3: Angular -> OpenWhisk (computes volume from three numbers)
