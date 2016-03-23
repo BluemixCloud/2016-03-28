@@ -223,6 +223,7 @@ npm test # to run all tests
 
 #### Project 4
   - Twitter Sentiment Analysis
+  - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
   - Use NodeRED to create a flow that collects data from Twitter, performs Sentiment Analyis and inserts all that data into a DB2 SQL Database.
   - Create another flow to query the database and send back the result as JSON.
   - Create a button in Angular that will fetch all the data and display the data in a table and graph.
@@ -287,3 +288,74 @@ function drawChart(tweets){
   });
 }
 ```
+
+#### Project 5
+  - SMS Famous Movie Quote Service
+  - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
+
+#### Project 6
+  - Slack Get Current Weather Forecast
+  - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
+
+#### Project 7
+  - Camera Image Capture & Watson Analyis
+  - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
+
+#### Project 8
+  - Microphone Audio Capture, Speech Translation
+  - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
+
+#### Project 9
+  - Slack and Cloud Foundry Integration
+  - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
+
+#### Project 10
+  - IoT with Raspberry Pi 3
+  - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
+
+#### Hackathon
+  - http://bluemixathon.devpost.com/
+  - https://vimeo.com/137915648
+  - http://www.linkedin.com/pulse/so-you-want-run-corporate-hackathon-vinod-ralh
+  - Split into groups of 3 or 4
+  - Each team build an application using Bluemix services and deploys using DevOps services
+  - At the conclusion of the hackathon, each team demos their app to the class
+
+#### Retrospective
+
+#### Feedback
+  - https://docs.google.com/a/galvanize.com/forms/d/1jRT3EE_acCe_V8iWA77nU8sdqhbBmIiHUsAiMVQt4Eo/viewform
+
+#### Tour
+  - Galvanize
+  - Full Stack Classrooms
+  - Data Science Classrooms
+  - Bluemix Garage
+  - Cloudant
+  - Startups
+
+#### Happy Hour on Roof
+
+#### Collect Badges
+
+# REFERENCES
+
+### Bluemix Services
+  - [SQL Database](https://console.ng.bluemix.net/catalog/services/sql-database/)
+  - [Cloudant](https://console.ng.bluemix.net/catalog/services/cloudant-nosql-db/)
+  - [Object Storage](https://console.ng.bluemix.net/catalog/services/object-storage/)
+  - [Language Translation](https://console.ng.bluemix.net/catalog/services/language-translation/)
+  - [Visual Recognition](https://console.ng.bluemix.net/catalog/services/visual-recognition/)
+  - [Text to Speech](https://console.ng.bluemix.net/catalog/services/text-to-speech/)
+  - [Speech to Text](https://console.ng.bluemix.net/catalog/services/speech-to-text/)
+
+### Books
+  - [You Don't Know JS 6-book series](https://github.com/getify/You-Dont-Know-JS)
+  - [Eloquent JavaScript](http://eloquentjavascript.net/)
+  - [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+  - [Human JavaScript](http://read.humanjavascript.com/ch04-organizing-your-code.html)
+  - [JavaScript Allonge](https://leanpub.com/javascript-allonge/read)
+  - [Speaking JavaScript](http://speakingjs.com/es5/)
+
+### Reference Links
+  - [DB2 Data Types](https://www-01.ibm.com/support/knowledgecenter/SSEPGG_10.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0008483.html?cp=SSEPGG_10.5.0%2F2-12-2-3)
