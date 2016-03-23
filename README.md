@@ -202,3 +202,13 @@ npm test # to run all tests
   - Additional Nodes & Flows, http://flows.nodered.org/
   - Create basic NodeRED flows, exercise functionality
 
+#### Chrome Debugging Plugins
+  - [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa)
+  - [Angular Inspector](https://chrome.google.com/webstore/detail/ng-inspector-for-angularj/aadgmnobpdmgmigaicncghmmoeflnamj)
+
+#### Front End Technologies
+  - Browser
+  - Angular, JavaScript MVC Framework, https://angularjs.org/
+  - Twitter Bootstrap CSS Framework, http://getbootstrap.com/
+  - Highcharts Analytical Charting, http://www.highcharts.com/
+  - [Fullstack Template](https://github.com/BluemixCloud/full-stack-template.2016.03.03)
