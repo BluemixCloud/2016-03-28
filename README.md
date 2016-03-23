@@ -211,4 +211,4 @@ npm test # to run all tests
   - Angular, JavaScript MVC Framework, https://angularjs.org/
   - Twitter Bootstrap CSS Framework, http://getbootstrap.com/
   - Highcharts Analytical Charting, http://www.highcharts.com/
-  - [Fullstack Template](https://github.com/BluemixCloud/full-stack-template.2016.03.03)
+  - [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
