@@ -215,6 +215,9 @@ npm test # to run all tests
 
 #### Project 3
   - Microservice Architecture
+  - Prerequisites
+    - [NodeRED](https://console.ng.bluemix.net/catalog/starters/node-red-starter/)
+    - [OpenWhisk](https://new-console.ng.bluemix.net/openwhisk/)
   - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
   - In Angular, create 3 buttons
   - Button 1: Angular -> NodeRed -> OpenWhisk (squares an input number along each step)
@@ -223,6 +226,10 @@ npm test # to run all tests
 
 #### Project 4
   - Twitter Sentiment Analysis
+  - Prerequisites
+    - [NodeRED](https://console.ng.bluemix.net/catalog/starters/node-red-starter/)
+    - [OpenWhisk](https://new-console.ng.bluemix.net/openwhisk/)
+    - [SQL Database](https://console.ng.bluemix.net/catalog/services/sql-database/)
   - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
   - Use NodeRED to create a flow that collects data from Twitter, performs Sentiment Analyis and inserts all that data into a DB2 SQL Database.
   - Create another flow to query the database and send back the result as JSON.
@@ -291,11 +298,28 @@ function drawChart(tweets){
 
 #### Project 5
   - SMS Famous Movie Quote Service
+  - Prerequisites
+    - [OpenWhisk](https://new-console.ng.bluemix.net/openwhisk/)
+    - [Twilio Credentials](https://www.twilio.com/user/account/messaging/dashboard)
+    - [Twilio Phone Numbers](https://www.twilio.com/user/account/messaging/phone-numbers)
+    - [Twilio API](http://twilio.github.io/twilio-node/)
+    - [Quote Service](https://market.mashape.com/andruxnet/random-famous-quotes)
   - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
+  - A user sends an SMS message to Twilio -> Express -> OpenWhisk -> Quote Service
+  - The service returns a famous movie quote to the user's phone
 
 #### Project 6
   - Slack Get Current Weather Forecast
+  - Prerequisites
+    - [OpenWhisk](https://new-console.ng.bluemix.net/openwhisk/)
+    - [Slack Account](https://slack.com/)
+    - [Slack Outgoing Webhooks](https://api.slack.com/outgoing-webhooks)
+    - [Weather Service](http://openweathermap.org/current)
+    - [Weather Service Key](http://home.openweathermap.org/users/sign_up)
   - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
+  - User opens a slack channel, asks for the current weather for their zip code
+  - Slack -> Express -> OpenWhisk -> Weather Service
+  - The retured weather forcast gets displayed in the slack channel
 
 #### Project 7
   - Camera Image Capture & Watson Analyis
@@ -307,10 +331,6 @@ function drawChart(tweets){
 
 #### Project 9
   - Slack and Cloud Foundry Integration
-  - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
-
-#### Project 10
-  - IoT with Raspberry Pi 3
   - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
 
 #### Hackathon
