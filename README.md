@@ -218,11 +218,13 @@ npm test # to run all tests
   - Prerequisites
     - [NodeRED](https://console.ng.bluemix.net/catalog/starters/node-red-starter/)
     - [OpenWhisk](https://new-console.ng.bluemix.net/openwhisk/)
+    - [Twitch](https://api.twitch.tv/kraken/games/top)
   - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
   - In Angular, create 3 buttons
   - Button 1: Angular -> NodeRed -> OpenWhisk (squares an input number along each step)
   - Button 2: Angular -> Express (factorial of input number)
   - Button 3: Angular -> OpenWhisk (computes volume from three numbers)
+  - Button 4: Show a list of top games on Twitch
 
 #### Project 4
   - Twitter Sentiment Analysis
