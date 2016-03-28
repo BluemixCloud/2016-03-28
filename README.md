@@ -144,7 +144,7 @@ npm test # to run all tests
   - Pick a project manager
   - The PM will go here, https://hub.jazz.net/project/chyld/backend
   - PM, click the "Fork Project" button
-    - Name the project: fundamentals
+    - Name the project: backend
     - Check all the boxes
     - Click Create
   - PM, click the "Members" link on the left, add your partner to the repository
