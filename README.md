@@ -343,10 +343,6 @@ function drawChart(tweets){
   - Microphone Audio Capture, Speech Translation
   - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
 
-#### Project 9
-  - Slack and Cloud Foundry Integration
-  - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
-
 #### Hackathon
   - http://bluemixathon.devpost.com/
   - https://vimeo.com/137915648
