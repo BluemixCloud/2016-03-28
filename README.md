@@ -57,6 +57,8 @@ vi ~/.gitconfig
 exit
 ```
 
+  - To follow me on C9: [Chyld's C9](https://ide.c9.io/chyld/bluemix)
+
 #### Git & JazzHub
   - [Git](http://git-scm.com/)
   - [JazzHub](https://hub.jazz.net/)
