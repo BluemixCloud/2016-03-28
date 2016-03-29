@@ -173,6 +173,7 @@ npm test # to run all tests
   - Code Editor
   - Track & Plan
   - Build Pipeline
+    - Use `manifest.yml` from [Backend](https://hub.jazz.net/project/chyld/backend)
     - Build a Stage
     - Add Jobs to a Stage
     - Jobs can be re-ordered
@@ -325,7 +326,18 @@ function drawChart(tweets){
 
 #### Project 7
   - Camera Image Capture & Watson Analyis
+  - Prerequisites
+    - [Webcam.js](https://pixlcore.com/read/WebcamJS)
+    - [Object Storage](https://console.ng.bluemix.net/catalog/services/object-storage/)
+    - [NodeRED](https://console.ng.bluemix.net/catalog/starters/node-red-starter/)
+    - [Visual Recognition](https://console.ng.bluemix.net/catalog/services/visual-recognition/)
+    - [Cloudant](https://console.ng.bluemix.net/catalog/services/cloudant-nosql-db/)
   - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
+  - User snaps a photo of herself using the laptop's webcam.
+  - The photo gets uploaded to Object Storage.
+  - Then the photo gets pulled into NodeRED, gets analyzed by Watson Visual Recognition
+  - That data gets stored in a Cloudant database
+  - A browser will query the Cloudant database and display all the results
 
 #### Project 8
   - Microphone Audio Capture, Speech Translation
