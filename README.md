@@ -352,7 +352,9 @@ function drawChart(tweets){
     - [Speech to Text](https://console.ng.bluemix.net/catalog/services/speech-to-text/)
   - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
 
-![Whiteboard](images/audio.png)
+![Audio](images/audio.png)
+
+![Whiteboard](images/whiteboard.jpg)
 
 Buttons inside HTML
 
