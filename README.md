@@ -343,7 +343,95 @@ function drawChart(tweets){
 
 #### Project 8
   - Microphone Audio Capture, Speech Translation
+  - Prerequisites
+    - [Object Storage](https://console.ng.bluemix.net/catalog/services/object-storage/)
+    - [NodeRED](https://console.ng.bluemix.net/catalog/starters/node-red-starter/)
+    - [Cloudant](https://console.ng.bluemix.net/catalog/services/cloudant-nosql-db/)
+    - [Language Translation](https://console.ng.bluemix.net/catalog/services/language-translation/)
+    - [Text to Speech](https://console.ng.bluemix.net/catalog/services/text-to-speech/)
+    - [Speech to Text](https://console.ng.bluemix.net/catalog/services/speech-to-text/)
   - Fork and Clone the [Fullstack Template](https://hub.jazz.net/project/chyld/full-stack-template)
+
+Buttons inside HTML
+
+```html
+<button ng-click="startRec()">Start</button>
+<button ng-click="stopRec()">Stop</button>
+```
+
+Place at the bottom of your angular code in index.js
+
+```js
+var audio_context;
+var recorder;
+
+initAudio();
+
+function startUserMedia(stream) {
+  var input = audio_context.createMediaStreamSource(stream);
+  recorder = new Recorder(input);
+}
+
+function initAudio(){
+  try {
+    window.AudioContext = window.AudioContext || window.webkitAudioContext;
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+    window.URL = window.URL || window.webkitURL;
+
+    audio_context = new AudioContext;
+  } catch (e) {
+    alert('No web audio support in this browser!');
+  }
+
+  navigator.getUserMedia({audio: true}, startUserMedia, function(e) {
+    console.log('No live audio input: ' + e);
+  });
+}
+
+function uploadAudio(){
+  recorder && recorder.exportWAV(function(blob) {
+    var formData = new FormData();
+    formData.append("voice", blob);
+    var request = new XMLHttpRequest();
+    request.open("post", "/audio");
+    request.send(formData);
+  });
+}
+```
+
+Functions to start and stop recording - also upload to server
+
+```js
+ $scope.startRec = function(){
+    console.log('Recording: Start');
+    recorder && recorder.record();
+  };
+
+  $scope.stopRec = function(){
+    console.log('Recording: Stop');
+    recorder && recorder.stop();
+    uploadAudio();
+    recorder.clear();
+  };
+```
+
+REST API Endpoint in Express.js that will upload audio to NodeRED
+
+```js
+var os = new ObjectStorage('user_id', 'password', 'project_id', 'container_name', 'access_point_url');
+os.setContainerPublicReadable();
+
+app.post('/audio', uploadr.single('voice'), function(req, res){
+  var name = 'audio-original-' + uuid.v1() + '.wav';
+  os.uploadFileToContainer(name, req.file.mimetype, req.file.buffer, req.file.size)
+  .then(function(file){
+    var o = {url: 'http://___your_node_red___.mybluemix.net/translate-audio', json: true, method: 'post', body: {url: file}};
+    request(o, function(e, r, b){
+      res.send({payload: 'success'});
+    });
+  });
+});
+```
 
 #### Hackathon
   - http://bluemixathon.devpost.com/
